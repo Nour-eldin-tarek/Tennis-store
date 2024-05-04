@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>pizza Restorant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<style>
+body{
+    margin: 0px;
+    font-family: 'Amatic SC', cursive;
+}
+.container{
+    width: 100%;
+    height: 650px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* border: 5px solid black; */
+    position: relative;
+    background: url("{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\img\tennis.jpg' %}")no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+.center{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 60px;
+    font-family: 'Amatic SC', cursive;
+}
+mark{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 26px;
+}
+.secndp{
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+}
+table {
+    font-family:'Amatic SC', cursive;
+    font-size: 23px;
+    border-collapse: collapse;
+    width: 690;
+    margin-left: 415px;
+}
+
+td, th {
+    background-color: white;
+    text-align: left;
+    margin: 0px;
+    padding-left: 7px;
+}
+.tablestyle{
+    color: rgb(97, 97, 97);
+}
+.pstyl{
+    background-color: rgb(139, 95, 92);
+    color: white;
+    margin: 0px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+.tdth{
+    background-color: rgb(139, 95, 92);
+    text-align: left;
+    margin: 0px;
+    padding-left: 0px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<pre class="center"><a href="/"><img src="https://global.tennis-point.com/on/demandware.static/-/Library-Sites-TennisPoint/default/dwe18fef00/logo/logo.svg"></a>
+<mark style="font-size: 35px;">What we do !</mark></pre>
+</div>
+<pre class="secndp">
+
+
+
+<img src="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\img\novake.jpg' %}" width="100%">
+
+<mark style="font-size: 40px;">Exclusive rackets and more....</mark>
+
+
+
+
+<img src="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\img\nasal.jpg' %}" width="100%">
+
+    <mark style="font-size: 40px;">Newst model of Brands product....</mark>
+
+
+
+
+</pre>
+<pre class="pstyl">
+
+
+
+<p style="font-size: 40px;margin-left: 720px;margin-bottom: 0px;">About</p>
+
+<p style="margin-left: 400px;font-size: 25px;">The Tennis store is not somthing esy but as you know it's akinf of art and not any art but art art ya3ny so we make every thing
+that you will need know or then available for you.you will finf every brands of rackets,strings,T-shirt,shorts and shose.
+you will even find a highe level trainers for you just vist us.
+Tennis Point is the best way to professionalism
+
+</p><p style="font-size: 15px;margin-left: 400px;margin-bottom: 0px;"><b>The owner? </b>Mr. Nour eldin</p><p style="font-size: 15px;margin-left: 400px;">We are proud of our customers.</p>
+<p style="margin-left: 400px;margin-bottom: 0px;"></p>
+<table style="margin-left: 400px;width: 700px;">
+    <tr>
+        <td class="tdth" style="font-size: 30px; width: 50%;height: 80px;"><b>Opening Hours</b></td>
+        <td class="tdth" style="width: 50%;"> </td>
+    </tr>
+    <!-- 1 -->
+    <tr>
+        <td class="tdth" style="font-size: 18px;height: 50px;">Mon & Tue CLOSED</td>
+        <td class="tdth" style="font-size: 18px;">Friday 10:00 - 12:00</td>
+    </tr>
+    <!-- 2 -->
+    <tr>
+        <td class="tdth" style="font-size: 18px;height: 50px;">Wednesday 10.00 - 24.00</td>
+        <td class="tdth" style="font-size: 18px;">Saturday 10:00 - 23:00</td>
+    </tr>
+    <!-- 3 -->
+    <tr>
+        <td class="tdth" style="font-size: 18px;height: 50px;">Thursday 10:00 - 24:00</td>
+        <td class="tdth" style="font-size: 18px;">Sunday Closed</td>
+    </tr>
+</table>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.955427029515!2d31.345682275089263!3d30.124088914793596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815c806e05925%3A0xa62773a9b6bfb24a!2sItaliano%20Restaurant!5e0!3m2!1sen!2seg!4v1694081858214!5m2!1sen!2seg" width="100%" height="450" style="border:0; margin: 0px;"loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br><p style="text-align: center;color: black;font-size: 20px;"><mark style="color: red;">Made by Nour eldin Tarek</mark></p>
+</body>
+</html>

@@ -1,0 +1,827 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tennis point</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for icons -->
+    <lin/k rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"> <!--  for flags  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\CSS\cssjquary.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\CSS\styleslider.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\CSS\bootstrapmain.css' %}">
+<link href="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\CSS\styles.css' %}" rel="stylesheet">
+
+
+<style>
+
+</style>
+</head>
+<body>
+<nav class=" navbar-expand-sm minibar"> <!-- minibar bar-->
+    <div class="container ">
+        <div class="row tr">
+            <div class="col">
+            <a class="nav-link fa fa-truck" href="#"> Free delivery over 150 €</a>
+            </div>
+            <div class="col">
+            <a class="nav-link fa fa-retweet" href="#"> 30 days money-back guarantee</a>
+            </div>
+            <div class="col">
+            <a class="nav-link fa fa-lock" data-title="Data protection"  data-href="https://global.tennis-point.com/help-service_privacy_policy.html" href="#"> Secure shopping</a>
+            </div>
+            <div class="col">
+            <a class="nav-link fa fa-phone" href="tel:+01144951789" title="Tennis-Point Hotline">+01144951789</a>
+            </div>
+            <div class="col-1" id="shiptoselector">
+            </a><div class="col" id="shiptoselector"><a href="#" data-href="">
+            <a class="nav-link" href="#"><b>Ship To: </b><span class="flag-icon flag-icon-eg"></span></a>
+            </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-sm bg-light " data-spy="affix" data-offset-top="1"><!--nav bar-->
+    <div class="container">
+        <a href="/" title="Tennis-Point Home"> <!-- tennispoint Logo -->
+            <img class="hidden-md-down ls-is-cached lazyloaded" data-src="#" alt="Tennis-Point" src="https://global.tennis-point.com/on/demandware.static/-/Library-Sites-TennisPoint/default/dwe18fef00/logo/logo.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li >
+                    <div class="navbarsearch">
+                        <form role="search" action="/search/" method="get" name="simpleSearch" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+                        <input class="form-control" type="search"  placeholder="Search for tennis stuff...">
+                        </form>
+                    </div>
+                </li>
+                <li class="nav-item navbaritems">
+                    <a class="nav-link" href="#">
+                        <li class="dropdown megamenu">
+                            <a>
+                                <p class="navbaricons" style="font-size: 20px;margin: 0px;"><i class="fa fa-user"></i><br><a style="font-size: 15px;margin: 0px;">My Account</a></p>
+                            </a>
+                            <ul >
+                                <div>
+                                    <div>
+                                        <a style="background-color: rgb(224, 224, 224); padding: 10px 60px; margin-left: 20px;">Account Information</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a style="background-color: rgb(255, 254, 0); padding: 10px 113px; margin-left: 20px;">Logn</a>
+                                    </div>
+                                    <br>
+                                    <p><p style="font-size: 11px; margin: 0px;">New customer?<br>
+                                        Create an account now.</p>
+                                        <i class="fa fa-cog"style="font-size: 13px;margin-left:10px ;"></i> My Account</i><br>
+                                        <i class="fas fa-box"style="font-size: 13x;margin-left:10px ;"></i> My order history</i><br>
+                                        <i class="fa fa-credit-card"style="font-size: 13px;margin-left:10px ;"></i> Billing and shipping settings</i><br>
+                                        <i class="fa fa-building"style="font-size: 13px;margin-left:10px ;"></i> Help & service</i>
+                                    </p>
+                                </div>
+                            </ul>
+                        </li>
+                    </a>
+                </li>
+                <li class="nav-item navbaritems">
+                    <a class="nav-link" href="#">
+                        <a href="apout" style="color: rgb(66, 66, 66);">
+                            <p class="navbaricons" style="font-size: 20px;margin: 0px;"><i class="fa fa-map-marker"></i><br><a style="font-size: 15px;margin: 0px; text-decoration: none; color: rgb(66, 66, 66); " href="apout">Apout</a></p>
+                        </a>
+                    </a>
+                </li>
+                <li class="nav-item navbaritems">
+                    <a class="nav-link" href="#">
+                        <a  href="prouduct">
+                            <p class="navbaricons" style="font-size: 20px;margin: 0px;"><i class="fa fa-bullhorn"></i><br><a style="font-size: 15px;margin: 0px; text-decoration: none; "  href="prouduct">
+                                Product</a></p>
+                        </a>
+                    </a>
+                </li>
+                <li class="nav-item navbaritems">
+                    <a class="nav-link" href="#">
+                        <a>
+                            <p class="navbaricons" style="font-size: 20px;margin: 0px;"><i class="fa fa-heart"></i><br><a style="font-size: 15px;margin: 0px;">Gift registry</a></p>
+                        </a>
+                    </a>
+                </li>
+                <li class="nav-item navbaritems">
+                    <a class="nav-link" href="#">
+                        <li class="dropdown megamenu">
+                            <a>
+                                <p class="navbaricons" style="font-size: 20px;margin: 0px;"><i class="fa fa-shopping-cart"></i><br><a style="font-size: 15px;margin: 0px;">Cart</a></p>
+                            </a>
+                            <ul >
+                                <div>
+                                    <div>
+                                        <a style="background-color: rgb(224, 224, 224); padding: 10px 60px; margin-left: 20px;">Account Information</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a style="background-color: rgb(255, 254, 0); padding: 10px 113px; margin-left: 20px;">Logn</a>
+                                    </div>
+                                    <br>
+                                    <p><p style="font-size: 11px; margin: 0px;">New customer?<br>
+                                        Create an account now.</p>
+                                        <i class="fa fa-cog"style="font-size: 13px;margin-left:10px ;"></i> My Account</i><br>
+                                        <i class="fas fa-box"style="font-size: 13x;margin-left:10px ;"></i> My order history</i><br>
+                                        <i class="fa fa-credit-card"style="font-size: 13px;margin-left:10px ;"></i> Billing and shipping settings</i><br>
+                                        <i class="fa fa-building"style="font-size: 13px;margin-left:10px ;"></i> Help & service</i>
+                                    </p>
+                                </div>
+                            </ul>
+                        </li>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="mininavbar"><div class="dropdown2">
+        <button class="dropbtn" style="margin-left: 100px;">Tennis rackets 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+                
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4><i class="fa fa-bars"></i> Categories</h4>
+                    <a href="#">Allround rackets</a>
+                    <a href="#">Comfort rackets</a>
+                    <a href="#">Tour rackets</a>
+                </div>
+                <div class="column-mini">
+                    <h4><i class="fa fa-star"></i>Brands</h4>
+                    <a href="#">Babolat</a>
+                    <a href="#"> Dunlop</a>
+                    <a href="#">HEAD</a>
+                    <a href="#">Lacoste</a>
+                    <a href="#"> Pacific</a>
+                    <a href="#">Prince</a>
+                    <a href="#">Wilson</a>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn"style="margin-left: 30px;">Tennis clothing 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            
+            <div class="row">
+                <div class="column-mini">
+                    <h4><i class="fa fa-male"></i><i class="fa fa-female"></i>Gender</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn"style="margin-left: 30px;">Tennis shoes 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4>Category 1</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn"style="margin-left: 30px;">Tennis bags 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4>Category 1</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn"style="margin-left: 30px;">Tennis balls 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4>Category 1</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn"style="margin-left: 30px;">Tennis strings 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4>Category 1</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn"style="margin-left: 30px;">Other 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4>Category 1</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn"style="margin-left: 30px;">Brands 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4>Category 1</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button class="dropbtn" style="color: red; border-bottom: 5px solid red;" >%Sale% 
+
+        </button>
+        <div class="dropdown-content"style="margin-left: 90px;">
+            <div class="header">
+
+            </div>   
+            <div class="row">
+                <div class="column-mini">
+                    <h4>Category 1</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 2</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <div class="column-mini">
+                    <h4>Category 3</h4>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://global.tennis-point.com/dw/image/v2/BBDP_PRD/on/demandware.static/-/Library-Sites-TennisPoint/en/dw4e2db716/media/default/teaser/home_main_slider/desktop_mainteaser/230914_mainteaser_new_york_styles_special_25prozent_com.jpg?q=80" alt="Los Angeles" class="d-block" style="width:100%; height: 650px;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://global.tennis-point.com/dw/image/v2/BBDP_PRD/on/demandware.static/-/Library-Sites-TennisPoint/en/dwda9b1eef/media/default/teaser/home_main_slider/desktop_mainteaser/230814_mainteaser_adidas_new_york_com.jpg?q=80" alt="Chicago" class="d-block" style="width:100%; height: 650px;">    
+        </div>
+        <div class="carousel-item">
+            <img src="https://global.tennis-point.com/dw/image/v2/BBDP_PRD/on/demandware.static/-/Library-Sites-TennisPoint/en/dwff5da740/media/default/teaser/home_main_slider/desktop_mainteaser/230912_mainteaser_flash-weeks_schlaeger_taschen_com.jpg?q=80" alt="New York" class="d-block" style="width:100%; height: 650px;">
+        </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Categories Section Begin -->
+<div class="fashion_section">
+    <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <h1 class="fashion_taital"></h1>
+                    <div class="fashion_section_2">
+                        <div class="row">
+                            <div class="row">
+                                {% block content %}
+                                {% for post in posts %}
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="box_main">
+                                        <h4 class="shirt_text">{{ post.name }}</h4>
+                                        <p class="price_text">Start Price  <span style="color: #262626;">{{ post.price }}</span></p>
+                                            <div class="electronic_img"><img class="img-fluid" src="{{ post.image.url }}" ></div>
+                                                <div class="btn_main">
+                                                    <div class="buy_bt"><a href="#">{{ post.catagry }}</a></div>
+                                                        <div class="seemore_bt"><a href="#">{{ post.descrip }}</a></div>
+                                                </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% endblock %}
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        
+                        {% for Racte in postss %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ Racte.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ Racte.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ Racte.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ Racte.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ Racte.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        {% for Racte2 in posts3 %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ Racte2.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ Racte2.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ Racte2.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ Racte2.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ Racte2.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
+    <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
+    <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+<!-- categroy section end -->
+
+
+<!-- Javascript files-->
+<script src="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\js\jquary.js' %}"></script>
+
+<script src="{% static 'C:\Users\nourt\Downloads\Django projects\iTi project\iTiFinalProject\TennisPoint\static\js\jsbootstrap.js' %}"></script>
+<!-- sidebar -->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<!-- Categories Section End --><br><br><br><br>
+<div id="demo2" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://global.tennis-point.com/dw/image/v2/BBDP_PRD/on/demandware.static/-/Library-Sites-TennisPoint/en/dw4e2db716/media/default/teaser/home_main_slider/desktop_mainteaser/230914_mainteaser_new_york_styles_special_25prozent_com.jpg?q=80" alt="Tennis img" class="d-block" style="width:100%;">
+        </div>
+        <div class="carousel-item">
+            <img src="https://global.tennis-point.com/dw/image/v2/BBDP_PRD/on/demandware.static/-/Library-Sites-TennisPoint/en/dwda9b1eef/media/default/teaser/home_main_slider/desktop_mainteaser/230814_mainteaser_adidas_new_york_com.jpg?q=80" alt="Tennis img" class="d-block" style="width:100%;">    
+        </div>
+        <div class="carousel-item">
+            <img src="https://global.tennis-point.com/dw/image/v2/BBDP_PRD/on/demandware.static/-/Library-Sites-TennisPoint/en/dwff5da740/media/default/teaser/home_main_slider/desktop_mainteaser/230912_mainteaser_flash-weeks_schlaeger_taschen_com.jpg?q=80" alt="Tennis img" class="d-block" style="width:100%;">
+        </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<!--     -->
+<div class="fashion_section">
+    <div id="_slider" class="carousel slide" >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <h1 class="fashion_taital"></h1>
+                    <div class="fashion_section_2">
+                        <div class="row">
+                            {% for Cloth in posts4 %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ Cloth.name }}</h4>
+                                <p class="price_text">Cloth Price  <span style="color: #262626;">{{ Cloth.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ Cloth.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ Cloth.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ Cloth.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        {% for Shose in posts5 %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ Shose.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ Shose.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ Shose.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ Shose.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ Shose.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        {% for Racet2 in posts3 %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ Racet2.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ Racet2.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ Racet2.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ Racet2.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ Racet2.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#_slider" role="button" data-slide="prev"style="margin-left: -30px;color: red; " >
+    <i class="fa fa-angle-left" ></i>
+    </a>
+    <a class="carousel-control-next" href="#_slider" role="button" data-slide="next"style="margin-right: -30px;color: red; " >
+    <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+<!-- categroy section end -->
+
+
+<div class="fashion_section">
+    <div id="_slider2" class="carousel slide" >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <h1 class="fashion_taital"></h1>
+                    <div class="fashion_section_2">
+                        <div class="row">
+                            {% for Mix in posts6 %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ Mix.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ Mix.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ Mix.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ Mix.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ Mix.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        {% for Shose in posts5 %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ Shose.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ Shose.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ Shose.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ Shose.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ Shose.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        {% for post in posts %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ post.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ post.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ post.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ post.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ post.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#_slider2" role="button" data-slide="prev"style="margin-left: -30px;color: red; ">
+    <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#_slider2" role="button" data-slide="next"style="margin-right: -30px;color: red; ">
+    <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+<!---->
+<div class="fashion_section">
+    <div id="_slider3" class="carousel slide" >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <h1 class="fashion_taital"></h1>
+                    <div class="fashion_section_2">
+                        <div class="row">
+                            {% for post in posts %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ post.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ post.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ post.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ post.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ post.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        {% for post in posts %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ post.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ post.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ post.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ post.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ post.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <h1 class="fashion_taital"></h1>
+                <div class="fashion_section_2">
+                    <div class="row">
+                        {% for post in posts %}
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="box_main">
+                                <h4 class="shirt_text">{{ post.name }}</h4>
+                                <p class="price_text">Start Price  <span style="color: #262626;">{{ post.price }}</span></p>
+                                    <div class="electronic_img"><img class="img-fluid" src="{{ post.image.url }}" ></div>
+                                        <div class="btn_main">
+                                            <div class="buy_bt"><a href="#">{{ post.catagry }}</a></div>
+                                                <div class="seemore_bt"><a href="#">{{ post.descrip }}</a></div>
+                                        </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#_slider3" role="button" data-slide="prev"style="margin-left: -30px;color: red; ">
+    <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#_slider3" role="button" data-slide="next"style="margin-right: -30px;color: red; ">
+    <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+<!--  -->
+<br><br><br><br><br><br><br><br><br>
+        
+</body>
+</html>
